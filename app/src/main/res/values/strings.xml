@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Fact or Crazy</string>
+    <string name="Category">Category: Planet Earth</string>
+    <string name="Intro"> Welcome, the quiz is designed to test your Planet Earth Knowledge. Enjoy the journey. </string>
+    <string name="Name_hint">Name</string>
+    <!-- questions and answers -->
+    <string name="question1">Q1. How old is Planet Earth?</string>
+    <string name="answer1">4.5 Billion Years</string>
+    <string name="answer_hint">Enter your answer here</string>
+    <string name="question2">Q2. The ocean holds nearly 20 million tons of gold!</string>
+    <string name="question3">Q3. 70 percent of Planet Earth is covered in ocean, and only 5 percent of the Earth and Earth ocean has been explored!</string>
+    <string name="question4">Q4. There is a giant hole in Turkmenistan called the \'Gates to Hell\', It is a massive natural gas crater that has been continuously burning for over 40 years!</string>
+    <string name="question5">Q5. Mt Chimborazo in Ecuador is 1.5 miles closer to the moon than Everest; the Earth highest mountain!</string>
+    <string name="question6">Q6. The hottest temperature ever recorded on Earth\'s surface was?</string>
+    <string name="question6a">136 degrees F/ 59.8 degrees C</string>
+    <string name="question6b">Libya, 1922</string>
+    <string name="question6c">Egypt, 1921</string>
+    <string name="question6d">150 degrees F/ 65.6 degrees C</string>
+    <string name="question7">Q7. The Earth\'s most active volcano \'Lighthouse of the Mediterranean\' has been erupting almost continuously for the past 2000 years!</string>
+    <string name="question8">Q8. The Pacific Ocean is by far Earth\'s largest ocean basin. It\'s so big that it could hold all of the world\'s continents!</string>
+    <string name="question9">Q9. The Sahara Desert</string>
+    <string name="question9a">Is the world’s largest hot desert</string>
+    <string name="question9b">The desert had it\s first snowfall for nearly 40 years in 2016</string>
+    <string name="question9c">Covers about half of Africa</string>
+    <string name="question10">Q10. Coral reefs are the Largest living structures on Earth and some are even visible from space</string>
+    <!-- Toast string  -->
+    <string name="toast1">Enter in format of \'1.5 Million Years\'</string>
+    <string name="toast2">Select only two</string>
+    <string name="toast3a">, well done! Your score is: </string>
+    <string name="toast3b"> out of 24.</string>
+    <string name="submit">Score</string>
+    <string name="reset">Reset</string>
+    <string name="correct">Fact</string>
+    <string name="wrong">Crazy</string>
+
+
+</resources>
