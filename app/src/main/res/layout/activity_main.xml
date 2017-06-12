@@ -16,26 +16,31 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:padding="@dimen/large"
+            android:background="#FFF"
+            android:elevation="2dp"
+            android:padding="@dimen/medium"
+            android:layout_margin="@dimen/xsmall"
             android:text="@string/Category"
             android:textSize="@dimen/title_large"
             android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/name_field"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/large"
-            android:hint="@string/Name_hint"
-            android:inputType="textCapWords" />
+    <LinearLayout style="@style/LinearLayout"
+        android:elevation="@dimen/mini" >
 
-        <TextView
+         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="@dimen/large"
             android:text="@string/Intro"
             android:textSize="@dimen/heading_body_regular" />
+
+        <EditText
+            style="@style/EditText"
+            android:id="@+id/name_field"
+            android:hint="@string/Name_hint" />
+
+    </LinearLayout>
 
         <LinearLayout style="@style/LinearLayout">
 
@@ -44,21 +49,14 @@
                 android:src="@drawable/earth" />
 
             <TextView
+                style="@style/Question"
                 android:id="@+id/planet_earth"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/xsmall"
-                android:text="@string/question1"
-                android:textSize="16sp" />
+                android:text="@string/question1" />
 
             <EditText
+                style="@style/EditText"
                 android:id="@+id/enter_earth"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/xsmall"
-                android:layout_marginBottom="@dimen/xsmall"
                 android:hint="@string/answer_hint"
-                android:inputType="textCapWords"
                 android:onClick="submitAnswer" />
 
         </LinearLayout>
@@ -70,12 +68,9 @@
                 android:src="@drawable/gold" />
 
             <TextView
+                style="@style/Question"
                 android:id="@+id/gold"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="4dp"
-                android:text="@string/question2"
-                android:textSize="16sp" />
+                android:text="@string/question2" />
 
             <RadioGroup
                 android:id="@+id/gold_radio"
@@ -109,12 +104,9 @@
                 android:src="@drawable/ocean" />
 
             <TextView
+                style="@style/Question"
                 android:id="@+id/ocean"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="@string/question3"
-                android:textSize="16sp" />
+                android:text="@string/question3" />
 
             <RadioGroup
                 android:id="@+id/ocean_radio"
@@ -148,12 +140,9 @@
                 android:src="@drawable/hell" />
 
             <TextView
+                style="@style/Question"
                 android:id="@+id/hell"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="@string/question4"
-                android:textSize="16sp" />
+                android:text="@string/question4" />
 
             <RadioGroup
                 android:id="@+id/hell_radio"
@@ -186,12 +175,9 @@
                 android:src="@drawable/mount" />
 
             <TextView
+                style="@style/Question"
                 android:id="@+id/mountain"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="@string/question5"
-                android:textSize="16sp" />
+                android:text="@string/question5" />
 
             <RadioGroup
                 android:id="@+id/mountain_radio"
@@ -225,12 +211,9 @@
                 android:src="@drawable/hot" />
 
             <TextView
+                style="@style/Question"
                 android:id="@+id/temperature"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="@string/question6"
-                android:textSize="16sp" />
+                android:text="@string/question6" />
 
             <CheckBox
                 android:id="@+id/answerA_checkbox"
@@ -272,12 +255,9 @@
                 android:src="@drawable/volcano" />
 
             <TextView
+                style="@style/Question"
                 android:id="@+id/question_7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="@string/question7"
-                android:textSize="16sp" />
+                android:text="@string/question7" />
 
             <RadioGroup
                 android:id="@+id/volcano_Radio"
@@ -311,12 +291,9 @@
                 android:src="@drawable/pacific_basin" />
 
             <TextView
+                style="@style/Question"
                 android:id="@+id/question_8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="4dp"
-                android:text="@string/question8"
-                android:textSize="16sp" />
+                android:text="@string/question8" />
 
             <RadioGroup
                 android:id="@+id/pacific_Radio"
@@ -349,12 +326,9 @@
                 android:src="@drawable/dessert" />
 
             <TextView
+                style="@style/Question"
                 android:id="@+id/question_9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="@string/question9"
-                android:textSize="16sp" />
+                android:text="@string/question9" />
 
             <CheckBox
                 android:id="@+id/saharaA_checkbox"
@@ -388,12 +362,9 @@
                 android:src="@drawable/coral_reef" />
 
             <TextView
+                style="@style/Question"
                 android:id="@+id/question_10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="@string/question10"
-                android:textSize="16sp" />
+                android:text="@string/question10" />
 
             <RadioGroup
                 android:id="@+id/reef_Radio"
