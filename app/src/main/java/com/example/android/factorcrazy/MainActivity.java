@@ -1,15 +1,12 @@
 package com.example.android.factorcrazy;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Editable;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
-import android.widget.TextView;
-import android.view.View;
 import android.widget.Toast;
-import java.text.NumberFormat;
 /**
  * This app displays points for a quiz app.
  */
@@ -28,16 +25,13 @@ public class MainActivity extends AppCompatActivity {
     public void submitAnswer(View view) {
         EditText enterAnswer = (EditText) findViewById(R.id.enter_earth);
         // Show a message as a toast
-        Toast.makeText(this, getString(R.string.toast1), Toast.LENGTH_LONG).show();
+        // Toast.makeText(this, getString(R.string.toast1), Toast.LENGTH_LONG).show();
         // Exit this method early because there's nothing left to do
 
         String yourAnswer = enterAnswer.getText().toString();
-        String Earth = getString(R.string.answer1);
+        String earth = getString(R.string.answer1);
         if (yourAnswer.equals(getString(R.string.answer1)))
-
-
-         points = points + 3;
-
+         points = points + 2;
     }
 
     /**

@@ -9,429 +9,425 @@
         android:id="@+id/activity_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:background="#F1F1F1"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:padding="@dimen/large"
             android:text="@string/Category"
-            android:textSize="20sp"
+            android:textSize="@dimen/title_large"
             android:textStyle="bold" />
 
         <EditText
             android:id="@+id/name_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="16dp"
+            android:layout_margin="@dimen/large"
             android:hint="@string/Name_hint"
             android:inputType="textCapWords" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="8dp"
             android:gravity="center"
+            android:padding="@dimen/large"
             android:text="@string/Intro"
-            android:textSize="16sp" />
+            android:textSize="@dimen/heading_body_regular" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginBottom="4dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/earth" />
+        <LinearLayout style="@style/LinearLayout">
 
-        <TextView
-            android:id="@+id/planet_earth"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:text="@string/question1"
-            android:textSize="16sp" />
+            <ImageView
+                style="@style/Image"
+                android:src="@drawable/earth" />
 
-        <EditText
-            android:id="@+id/enter_earth"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:hint="@string/answer_hint"
-            android:inputType="textCapWords"
-            android:onClick="submitAnswer" />
+            <TextView
+                android:id="@+id/planet_earth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/xsmall"
+                android:text="@string/question1"
+                android:textSize="16sp" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginBottom="4dp"
-            android:layout_marginTop="8dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/gold" />
+            <EditText
+                android:id="@+id/enter_earth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/xsmall"
+                android:layout_marginBottom="@dimen/xsmall"
+                android:hint="@string/answer_hint"
+                android:inputType="textCapWords"
+                android:onClick="submitAnswer" />
 
-        <TextView
-            android:id="@+id/gold"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="4dp"
-            android:text="@string/question2"
-            android:textSize="16sp" />
+        </LinearLayout>
 
-        <RadioGroup
-            android:id="@+id/gold_radio"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+        <LinearLayout style="@style/LinearLayout">
 
-            <RadioButton
-                android:id="@+id/gold_correct"
+            <ImageView
+                style="@style/Image"
+                android:src="@drawable/gold" />
+
+            <TextView
+                android:id="@+id/gold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:text="@string/question2"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/gold_radio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/gold_correct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="goldRadio"
+                    android:padding="10dp"
+                    android:text="@string/correct" />
+
+                <RadioButton
+                    android:id="@+id/gold_wrong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="goldRadio"
+                    android:padding="10dp"
+                    android:text="@string/wrong" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayout">
+
+            <ImageView
+                style="@style/Image"
+                android:src="@drawable/ocean" />
+
+            <TextView
+                android:id="@+id/ocean"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/question3"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/ocean_radio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/ocean_correct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oceanRadio"
+                    android:padding="10sp"
+                    android:text="@string/correct" />
+
+                <RadioButton
+                    android:id="@+id/ocean_wrong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oceanRadio"
+                    android:padding="10sp"
+                    android:text="@string/wrong" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayout">
+
+            <ImageView
+                style="@style/Image"
+                android:src="@drawable/hell" />
+
+            <TextView
+                android:id="@+id/hell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/question4"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/hell_radio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/hell_correct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="hellRadio"
+                    android:padding="10dp"
+                    android:text="@string/correct" />
+
+                <RadioButton
+                    android:id="@+id/hell_wrong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="hellRadio"
+                    android:padding="10dp"
+                    android:text="@string/wrong" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayout">
+
+            <ImageView
+                style="@style/Image"
+                android:src="@drawable/mount" />
+
+            <TextView
+                android:id="@+id/mountain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/question5"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/mountain_radio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/mountain_correct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="mountainRadio"
+                    android:padding="10dp"
+                    android:text="@string/correct" />
+
+                <RadioButton
+                    android:id="@+id/mountain_wrong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="mountainRadio"
+                    android:padding="10dp"
+                    android:text="@string/wrong" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayout">
+
+            <ImageView
+                style="@style/Image"
+                android:src="@drawable/hot" />
+
+            <TextView
+                android:id="@+id/temperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/question6"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/answerA_checkbox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="goldRadio"
-                android:padding="10dp"
-                android:text="@string/correct" />
-
-            <RadioButton
-                android:id="@+id/gold_wrong"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="goldRadio"
-                android:padding="10dp"
-                android:text="@string/wrong" />
-        </RadioGroup>
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginBottom="4dp"
-            android:layout_marginTop="16dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ocean" />
-
-        <TextView
-            android:id="@+id/ocean"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="@string/question3"
-            android:textSize="16sp" />
-
-        <RadioGroup
-            android:id="@+id/ocean_radio"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <RadioButton
-                android:id="@+id/ocean_correct"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="oceanRadio"
+                android:onClick="onCheckboxClicked"
                 android:padding="10sp"
-                android:text="@string/correct" />
+                android:text="@string/question6a" />
 
-            <RadioButton
-                android:id="@+id/ocean_wrong"
+            <CheckBox
+                android:id="@+id/answerB_checkbox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="oceanRadio"
+                android:onClick="onCheckboxClicked"
                 android:padding="10sp"
-                android:text="@string/wrong" />
-        </RadioGroup>
+                android:text="@string/question6b" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginBottom="4dp"
-            android:layout_marginTop="16dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/hell" />
-
-        <TextView
-            android:id="@+id/hell"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="@string/question4"
-            android:textSize="16sp" />
-
-        <RadioGroup
-            android:id="@+id/hell_radio"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <RadioButton
-                android:id="@+id/hell_correct"
+            <CheckBox
+                android:id="@+id/answerC_checkbox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="hellRadio"
-                android:padding="10dp"
-                android:text="@string/correct" />
+                android:onClick="onCheckboxClicked"
+                android:padding="10sp"
+                android:text="@string/question6c" />
 
-            <RadioButton
-                android:id="@+id/hell_wrong"
+            <CheckBox
+                android:id="@+id/answerD_checkbox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="hellRadio"
-                android:padding="10dp"
-                android:text="@string/wrong" />
-        </RadioGroup>
+                android:onClick="onCheckboxClicked"
+                android:padding="10sp"
+                android:text="@string/question6d" />
+        </LinearLayout>
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginBottom="4dp"
-            android:layout_marginTop="16dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/mount" />
+        <LinearLayout style="@style/LinearLayout">
 
-        <TextView
-            android:id="@+id/mountain"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="@string/question5"
-            android:textSize="16sp" />
+            <ImageView
+                style="@style/Image"
+                android:src="@drawable/volcano" />
 
-        <RadioGroup
-            android:id="@+id/mountain_radio"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            <TextView
+                android:id="@+id/question_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/question7"
+                android:textSize="16sp" />
 
-            <RadioButton
-                android:id="@+id/mountain_correct"
+            <RadioGroup
+                android:id="@+id/volcano_Radio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/volcano_correct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="volcanoRadio"
+                    android:padding="10dp"
+                    android:text="@string/correct" />
+
+                <RadioButton
+                    android:id="@+id/volcano_wrong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="volcanoRadio"
+                    android:padding="10dp"
+                    android:text="@string/wrong" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayout">
+
+            <ImageView
+                style="@style/Image"
+                android:src="@drawable/pacific_basin" />
+
+            <TextView
+                android:id="@+id/question_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:text="@string/question8"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/pacific_Radio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/pacific_correct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="pacificRadio"
+                    android:padding="10dp"
+                    android:text="@string/correct" />
+
+                <RadioButton
+                    android:id="@+id/pacific_wrong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="pacificRadio"
+                    android:padding="10dp"
+                    android:text="@string/wrong" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout style="@style/LinearLayout">
+
+            <ImageView
+                style="@style/Image"
+                android:src="@drawable/dessert" />
+
+            <TextView
+                android:id="@+id/question_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/question9"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/saharaA_checkbox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="mountainRadio"
-                android:padding="10dp"
-                android:text="@string/correct" />
+                android:onClick="saharaCheckboxClicked"
+                android:padding="10sp"
+                android:text="@string/question9a" />
 
-            <RadioButton
-                android:id="@+id/mountain_wrong"
+            <CheckBox
+                android:id="@+id/saharaB_checkbox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="mountainRadio"
-                android:padding="10dp"
-                android:text="@string/wrong" />
-        </RadioGroup>
+                android:onClick="saharaCheckboxClicked"
+                android:padding="10sp"
+                android:text="@string/question9b" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginBottom="4dp"
-            android:layout_marginTop="16dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/hot" />
-
-        <TextView
-            android:id="@+id/temperature"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="@string/question6"
-            android:textSize="16sp" />
-
-        <CheckBox
-            android:id="@+id/answerA_checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onCheckboxClicked"
-            android:padding="10sp"
-            android:text="@string/question6a" />
-
-        <CheckBox
-            android:id="@+id/answerB_checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onCheckboxClicked"
-            android:padding="10sp"
-            android:text="@string/question6b" />
-
-        <CheckBox
-            android:id="@+id/answerC_checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onCheckboxClicked"
-            android:padding="10sp"
-            android:text="@string/question6c" />
-
-        <CheckBox
-            android:id="@+id/answerD_checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="onCheckboxClicked"
-            android:padding="10sp"
-            android:text="@string/question6d" />
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginBottom="4dp"
-            android:layout_marginTop="16dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/volcano" />
-
-        <TextView
-            android:id="@+id/question_7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="@string/question7"
-            android:textSize="16sp" />
-
-        <RadioGroup
-            android:id="@+id/volcano_Radio"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <RadioButton
-                android:id="@+id/volcano_correct"
+            <CheckBox
+                android:id="@+id/saharaC_checkbox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="volcanoRadio"
-                android:padding="10dp"
-                android:text="@string/correct" />
+                android:onClick="saharaCheckboxClicked"
+                android:padding="10sp"
+                android:text="@string/question9c" />
+        </LinearLayout>
 
-            <RadioButton
-                android:id="@+id/volcano_wrong"
-                android:layout_width="wrap_content"
+        <LinearLayout style="@style/LinearLayout">
+
+            <ImageView
+                style="@style/Image"
+                android:src="@drawable/coral_reef" />
+
+            <TextView
+                android:id="@+id/question_10"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="volcanoRadio"
-                android:padding="10dp"
-                android:text="@string/wrong" />
-        </RadioGroup>
+                android:layout_marginTop="4dp"
+                android:text="@string/question10"
+                android:textSize="16sp" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginBottom="4dp"
-            android:layout_marginTop="16dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/pacific_basin" />
-
-        <TextView
-            android:id="@+id/question_8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="4dp"
-            android:text="@string/question8"
-            android:textSize="16sp" />
-
-        <RadioGroup
-            android:id="@+id/pacific_Radio"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <RadioButton
-                android:id="@+id/pacific_correct"
-                android:layout_width="wrap_content"
+            <RadioGroup
+                android:id="@+id/reef_Radio"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:onClick="pacificRadio"
-                android:padding="10dp"
-                android:text="@string/correct" />
+                android:orientation="vertical">
 
-            <RadioButton
-                android:id="@+id/pacific_wrong"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="pacificRadio"
-                android:padding="10dp"
-                android:text="@string/wrong" />
-        </RadioGroup>
+                <RadioButton
+                    android:id="@+id/reef_correct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="reefRadio"
+                    android:padding="10dp"
+                    android:text="@string/correct" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginBottom="4dp"
-            android:layout_marginTop="16dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/dessert" />
-
-        <TextView
-            android:id="@+id/question_9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="@string/question9"
-            android:textSize="16sp" />
-
-        <CheckBox
-            android:id="@+id/saharaA_checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="saharaCheckboxClicked"
-            android:padding="10sp"
-            android:text="@string/question9a" />
-
-        <CheckBox
-            android:id="@+id/saharaB_checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="saharaCheckboxClicked"
-            android:padding="10sp"
-            android:text="@string/question9b" />
-
-        <CheckBox
-            android:id="@+id/saharaC_checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="saharaCheckboxClicked"
-            android:padding="10sp"
-            android:text="@string/question9c" />
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginBottom="4dp"
-            android:layout_marginTop="16dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/coral_reef" />
-
-        <TextView
-            android:id="@+id/question_10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="@string/question10"
-            android:textSize="16sp" />
-
-        <RadioGroup
-            android:id="@+id/reef_Radio"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <RadioButton
-                android:id="@+id/reef_correct"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="reefRadio"
-                android:padding="10dp"
-                android:text="@string/correct" />
-
-            <RadioButton
-                android:id="@+id/reef_wrong"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="reefRadio"
-                android:padding="10dp"
-                android:text="@string/wrong" />
-        </RadioGroup>
+                <RadioButton
+                    android:id="@+id/reef_wrong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="reefRadio"
+                    android:padding="10dp"
+                    android:text="@string/wrong" />
+            </RadioGroup>
+        </LinearLayout>
 
         <Button
             android:id="@+id/submit_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textAllCaps="true"
             android:layout_marginTop="24dp"
             android:onClick="submitPoints"
-            android:text="@string/submit" />
+            android:text="@string/submit"
+            android:textAllCaps="true" />
 
         <Button
             android:id="@+id/reset_button"
@@ -439,9 +435,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="8dp"
-            android:textAllCaps="true"
             android:onClick="resetQuiz"
-            android:text="@string/reset" />
+            android:text="@string/reset"
+            android:textAllCaps="true" />
 
     </LinearLayout>
 
