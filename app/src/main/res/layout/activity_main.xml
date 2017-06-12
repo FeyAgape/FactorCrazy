@@ -58,6 +58,7 @@
                 android:text="@string/toast1"
                 android:textSize="@dimen/caption_small"
                 android:paddingLeft="@dimen/small"
+                android:paddingRight="@dimen/small"
                 android:paddingTop="@dimen/mini"
                 android:paddingBottom="@dimen/mini"
                 android:textColor="@color/colorAccent"/>
