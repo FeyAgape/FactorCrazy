@@ -53,6 +53,15 @@
                 android:id="@+id/planet_earth"
                 android:text="@string/question1" />
 
+            <TextView
+                style="@style/Question"
+                android:text="@string/toast1"
+                android:textSize="@dimen/caption_small"
+                android:paddingLeft="@dimen/small"
+                android:paddingTop="@dimen/mini"
+                android:paddingBottom="@dimen/mini"
+                android:textColor="@color/colorAccent"/>
+
             <EditText
                 style="@style/EditText"
                 android:id="@+id/enter_earth"
@@ -74,24 +83,18 @@
 
             <RadioGroup
                 android:id="@+id/gold_radio"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                style="@style/RadioGroup" >
 
                 <RadioButton
                     android:id="@+id/gold_correct"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:onClick="goldRadio"
-                    android:padding="10dp"
                     android:text="@string/correct" />
 
                 <RadioButton
                     android:id="@+id/gold_wrong"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:onClick="goldRadio"
-                    android:padding="10dp"
                     android:text="@string/wrong" />
             </RadioGroup>
 
@@ -109,25 +112,19 @@
                 android:text="@string/question3" />
 
             <RadioGroup
-                android:id="@+id/ocean_radio"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                style="@style/RadioGroup"
+                android:id="@+id/ocean_radio" >
 
                 <RadioButton
                     android:id="@+id/ocean_correct"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:onClick="oceanRadio"
-                    android:padding="10sp"
                     android:text="@string/correct" />
 
                 <RadioButton
                     android:id="@+id/ocean_wrong"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:onClick="oceanRadio"
-                    android:padding="10sp"
                     android:text="@string/wrong" />
             </RadioGroup>
 
@@ -146,24 +143,18 @@
 
             <RadioGroup
                 android:id="@+id/hell_radio"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                style="@style/RadioGroup" >
 
                 <RadioButton
                     android:id="@+id/hell_correct"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:onClick="hellRadio"
-                    android:padding="10dp"
                     android:text="@string/correct" />
 
                 <RadioButton
                     android:id="@+id/hell_wrong"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:onClick="hellRadio"
-                    android:padding="10dp"
                     android:text="@string/wrong" />
             </RadioGroup>
         </LinearLayout>
@@ -181,24 +172,18 @@
 
             <RadioGroup
                 android:id="@+id/mountain_radio"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                style="@style/RadioGroup">
 
                 <RadioButton
                     android:id="@+id/mountain_correct"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:onClick="mountainRadio"
-                    android:padding="10dp"
                     android:text="@string/correct" />
 
                 <RadioButton
                     android:id="@+id/mountain_wrong"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:onClick="mountainRadio"
-                    android:padding="10dp"
                     android:text="@string/wrong" />
             </RadioGroup>
 
@@ -217,34 +202,26 @@
 
             <CheckBox
                 android:id="@+id/answerA_checkbox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/CheckBox"
                 android:onClick="onCheckboxClicked"
-                android:padding="10sp"
                 android:text="@string/question6a" />
 
             <CheckBox
                 android:id="@+id/answerB_checkbox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/CheckBox"
                 android:onClick="onCheckboxClicked"
-                android:padding="10sp"
                 android:text="@string/question6b" />
 
             <CheckBox
                 android:id="@+id/answerC_checkbox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/CheckBox"
                 android:onClick="onCheckboxClicked"
-                android:padding="10sp"
                 android:text="@string/question6c" />
 
             <CheckBox
                 android:id="@+id/answerD_checkbox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/CheckBox"
                 android:onClick="onCheckboxClicked"
-                android:padding="10sp"
                 android:text="@string/question6d" />
         </LinearLayout>
 
@@ -261,24 +238,18 @@
 
             <RadioGroup
                 android:id="@+id/volcano_Radio"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                style="@style/RadioGroup" >
 
                 <RadioButton
                     android:id="@+id/volcano_correct"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:onClick="volcanoRadio"
-                    android:padding="10dp"
                     android:text="@string/correct" />
 
                 <RadioButton
                     android:id="@+id/volcano_wrong"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:onClick="volcanoRadio"
-                    android:padding="10dp"
                     android:text="@string/wrong" />
             </RadioGroup>
 
@@ -297,24 +268,18 @@
 
             <RadioGroup
                 android:id="@+id/pacific_Radio"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                style="@style/RadioGroup" >
 
                 <RadioButton
                     android:id="@+id/pacific_correct"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:onClick="pacificRadio"
-                    android:padding="10dp"
                     android:text="@string/correct" />
 
                 <RadioButton
                     android:id="@+id/pacific_wrong"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:onClick="pacificRadio"
-                    android:padding="10dp"
                     android:text="@string/wrong" />
             </RadioGroup>
         </LinearLayout>
@@ -332,26 +297,20 @@
 
             <CheckBox
                 android:id="@+id/saharaA_checkbox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/CheckBox"
                 android:onClick="saharaCheckboxClicked"
-                android:padding="10sp"
                 android:text="@string/question9a" />
 
             <CheckBox
                 android:id="@+id/saharaB_checkbox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/CheckBox"
                 android:onClick="saharaCheckboxClicked"
-                android:padding="10sp"
                 android:text="@string/question9b" />
 
             <CheckBox
                 android:id="@+id/saharaC_checkbox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/CheckBox"
                 android:onClick="saharaCheckboxClicked"
-                android:padding="10sp"
                 android:text="@string/question9c" />
         </LinearLayout>
 
@@ -368,47 +327,33 @@
 
             <RadioGroup
                 android:id="@+id/reef_Radio"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                style="@style/RadioGroup">
 
                 <RadioButton
                     android:id="@+id/reef_correct"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:onClick="reefRadio"
-                    android:padding="10dp"
                     android:text="@string/correct" />
 
                 <RadioButton
                     android:id="@+id/reef_wrong"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/RadioButton"
                     android:onClick="reefRadio"
-                    android:padding="10dp"
                     android:text="@string/wrong" />
             </RadioGroup>
         </LinearLayout>
 
         <Button
+            style="@style/Button"
             android:id="@+id/submit_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="24dp"
             android:onClick="submitPoints"
-            android:text="@string/submit"
-            android:textAllCaps="true" />
+            android:text="@string/submit" />
 
         <Button
+            style="@style/Button"
             android:id="@+id/reset_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="8dp"
             android:onClick="resetQuiz"
-            android:text="@string/reset"
-            android:textAllCaps="true" />
+            android:text="@string/reset" />
 
     </LinearLayout>
 
