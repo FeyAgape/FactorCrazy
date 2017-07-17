@@ -16,31 +16,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_margin="@dimen/xsmall"
             android:background="#FFF"
             android:elevation="2dp"
             android:padding="@dimen/medium"
-            android:layout_margin="@dimen/xsmall"
             android:text="@string/Category"
             android:textSize="@dimen/title_large"
             android:textStyle="bold" />
 
-    <LinearLayout style="@style/LinearLayout"
-        android:elevation="@dimen/mini" >
+        <LinearLayout
+            style="@style/LinearLayout"
+            android:elevation="@dimen/mini">
 
-         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="@dimen/large"
-            android:text="@string/Intro"
-            android:textSize="@dimen/heading_body_regular" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/large"
+                android:text="@string/Intro"
+                android:textSize="@dimen/heading_body_regular" />
 
-        <EditText
-            style="@style/EditText"
-            android:id="@+id/name_field"
-            android:hint="@string/Name_hint" />
+            <EditText
+                android:id="@+id/name_field"
+                style="@style/EditText"
+                android:hint="@string/Name_hint" />
 
-    </LinearLayout>
+        </LinearLayout>
 
         <LinearLayout style="@style/LinearLayout">
 
@@ -49,23 +50,23 @@
                 android:src="@drawable/earth" />
 
             <TextView
-                style="@style/Question"
                 android:id="@+id/planet_earth"
+                style="@style/Question"
                 android:text="@string/question1" />
 
             <TextView
                 style="@style/Question"
-                android:text="@string/toast1"
-                android:textSize="@dimen/caption_small"
+                android:paddingBottom="@dimen/mini"
                 android:paddingLeft="@dimen/small"
                 android:paddingRight="@dimen/small"
                 android:paddingTop="@dimen/mini"
-                android:paddingBottom="@dimen/mini"
-                android:textColor="@color/colorAccent"/>
+                android:text="@string/toast1"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/caption_small" />
 
             <EditText
-                style="@style/EditText"
                 android:id="@+id/enter_earth"
+                style="@style/EditText"
                 android:hint="@string/answer_hint"
                 android:onClick="submitAnswer" />
 
@@ -78,13 +79,13 @@
                 android:src="@drawable/gold" />
 
             <TextView
-                style="@style/Question"
                 android:id="@+id/gold"
+                style="@style/Question"
                 android:text="@string/question2" />
 
             <RadioGroup
                 android:id="@+id/gold_radio"
-                style="@style/RadioGroup" >
+                style="@style/RadioGroup">
 
                 <RadioButton
                     android:id="@+id/gold_correct"
@@ -108,13 +109,13 @@
                 android:src="@drawable/ocean" />
 
             <TextView
-                style="@style/Question"
                 android:id="@+id/ocean"
+                style="@style/Question"
                 android:text="@string/question3" />
 
             <RadioGroup
-                style="@style/RadioGroup"
-                android:id="@+id/ocean_radio" >
+                android:id="@+id/ocean_radio"
+                style="@style/RadioGroup">
 
                 <RadioButton
                     android:id="@+id/ocean_correct"
@@ -138,13 +139,13 @@
                 android:src="@drawable/hell" />
 
             <TextView
-                style="@style/Question"
                 android:id="@+id/hell"
+                style="@style/Question"
                 android:text="@string/question4" />
 
             <RadioGroup
                 android:id="@+id/hell_radio"
-                style="@style/RadioGroup" >
+                style="@style/RadioGroup">
 
                 <RadioButton
                     android:id="@+id/hell_correct"
@@ -167,8 +168,8 @@
                 android:src="@drawable/mount" />
 
             <TextView
-                style="@style/Question"
                 android:id="@+id/mountain"
+                style="@style/Question"
                 android:text="@string/question5" />
 
             <RadioGroup
@@ -197,8 +198,8 @@
                 android:src="@drawable/hot" />
 
             <TextView
-                style="@style/Question"
                 android:id="@+id/temperature"
+                style="@style/Question"
                 android:text="@string/question6" />
 
             <CheckBox
@@ -233,13 +234,13 @@
                 android:src="@drawable/volcano" />
 
             <TextView
-                style="@style/Question"
                 android:id="@+id/question_7"
+                style="@style/Question"
                 android:text="@string/question7" />
 
             <RadioGroup
                 android:id="@+id/volcano_Radio"
-                style="@style/RadioGroup" >
+                style="@style/RadioGroup">
 
                 <RadioButton
                     android:id="@+id/volcano_correct"
@@ -263,13 +264,13 @@
                 android:src="@drawable/pacific_basin" />
 
             <TextView
-                style="@style/Question"
                 android:id="@+id/question_8"
+                style="@style/Question"
                 android:text="@string/question8" />
 
             <RadioGroup
                 android:id="@+id/pacific_Radio"
-                style="@style/RadioGroup" >
+                style="@style/RadioGroup">
 
                 <RadioButton
                     android:id="@+id/pacific_correct"
@@ -292,8 +293,8 @@
                 android:src="@drawable/dessert" />
 
             <TextView
-                style="@style/Question"
                 android:id="@+id/question_9"
+                style="@style/Question"
                 android:text="@string/question9" />
 
             <CheckBox
@@ -322,8 +323,8 @@
                 android:src="@drawable/coral_reef" />
 
             <TextView
-                style="@style/Question"
                 android:id="@+id/question_10"
+                style="@style/Question"
                 android:text="@string/question10" />
 
             <RadioGroup
@@ -345,14 +346,14 @@
         </LinearLayout>
 
         <Button
-            style="@style/Button"
             android:id="@+id/submit_button"
+            style="@style/Button"
             android:onClick="submitPoints"
             android:text="@string/submit" />
 
         <Button
-            style="@style/Button"
             android:id="@+id/reset_button"
+            style="@style/Button"
             android:onClick="resetQuiz"
             android:text="@string/reset" />
 

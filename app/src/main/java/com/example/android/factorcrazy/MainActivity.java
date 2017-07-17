@@ -1,4 +1,5 @@
 package com.example.android.factorcrazy;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +8,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
+
 /**
  * This app displays points for a quiz app.
  */
@@ -31,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         String yourAnswer = enterAnswer.getText().toString();
         String earth = getString(R.string.answer1);
         if (yourAnswer.equals(getString(R.string.answer1)))
-         points = points + 2;
+            points = points + 2;
     }
 
     /**
