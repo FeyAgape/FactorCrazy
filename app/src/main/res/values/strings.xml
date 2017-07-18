@@ -26,8 +26,9 @@
     <!-- Toast string  -->
     <string name="toast1">Enter in format of \'1.5 Million Years\'</string>
     <string name="toast2">Select only two</string>
-    <string name="toast3a">, well done! Your score is: </string>
-    <string name="toast3b"> out of 24.</string>
+    <string name="toast3a">, Congrats, you are a Pro! Your score is: </string>
+    <string name="toast3b">, well done! Your score is: </string>
+    <string name="toast3c"> out of 24.</string>
     <string name="submit">Score</string>
     <string name="reset">Reset</string>
     <string name="correct">Fact</string>

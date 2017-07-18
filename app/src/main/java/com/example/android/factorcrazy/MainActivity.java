@@ -13,7 +13,7 @@ import android.widget.Toast;
  * This app displays points for a quiz app.
  */
 public class MainActivity extends AppCompatActivity {
-    int points = 0;
+    int points;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,9 @@ public class MainActivity extends AppCompatActivity {
         String earth = getString(R.string.answer1);
         if (yourAnswer.equals(getString(R.string.answer1)))
             points = points + 2;
+
     }
+
 
     /**
      * This method is called when question 2 is answered.
@@ -126,21 +128,18 @@ public class MainActivity extends AppCompatActivity {
 
         // Check which checkbox was clicked
         switch (view.getId()) {
-            case R.id.answerA_checkbox: {
+            case R.id.answerA_checkbox:
                 if (checked)
                     points = points + 2;
                 // Add two points
 
                 break;
-            }
-            case R.id.answerB_checkbox: {
+
+            case R.id.answerB_checkbox:
                 if (checked)
                     points = points + 2;
                 break;
-            }
-        }
-
-    }
+        }}
 
     /**
      * This method is called when question 7 is answered.
@@ -198,14 +197,13 @@ public class MainActivity extends AppCompatActivity {
                 if (checked)
                     points = points + 2;
                 // Add two points
+
                 break;
             case R.id.saharaB_checkbox:
                 if (checked)
                     points = points + 2;
-                // Add two points
                 break;
-        }
-
+            }
     }
 
     /**
@@ -235,9 +233,16 @@ public class MainActivity extends AppCompatActivity {
         EditText nameField = (EditText) findViewById(R.id.name_field);
         String name = nameField.getText().toString();
 
-        String submitMessage = name + getString(R.string.toast3a) + " " + points + " " + getString(R.string.toast3b);
+        String submitMessage = name + getString(R.string.toast3a) + " " + points + " " + getString(R.string.toast3c);
+        String submitMessageTwo = name + getString(R.string.toast3b) + " " + points + " " + getString(R.string.toast3c);
+
+        if (points >= 18)
         // makes Toast with the submitMessage which contains the  score
         Toast.makeText(this, submitMessage, Toast.LENGTH_LONG).show();
+
+        else if (points < 18) {
+            Toast.makeText(this, submitMessageTwo, Toast.LENGTH_LONG).show();
+        }
     }
 
     /**
