@@ -139,7 +139,8 @@ public class MainActivity extends AppCompatActivity {
                 if (checked)
                     points = points + 2;
                 break;
-        }}
+        }
+    }
 
     /**
      * This method is called when question 7 is answered.
@@ -203,7 +204,7 @@ public class MainActivity extends AppCompatActivity {
                 if (checked)
                     points = points + 2;
                 break;
-            }
+        }
     }
 
     /**
@@ -237,13 +238,14 @@ public class MainActivity extends AppCompatActivity {
         String submitMessageTwo = name + getString(R.string.toast3b) + " " + points + " " + getString(R.string.toast3c);
 
         if (points >= 18)
-        // makes Toast with the submitMessage which contains the  score
-        Toast.makeText(this, submitMessage, Toast.LENGTH_LONG).show();
+            // makes Toast with the submitMessage which contains the  score
+            Toast.makeText(this, submitMessage, Toast.LENGTH_LONG).show();
 
         else if (points < 18) {
             Toast.makeText(this, submitMessageTwo, Toast.LENGTH_LONG).show();
         }
     }
+
 
     /**
      * This method is called when the button is clicked.
