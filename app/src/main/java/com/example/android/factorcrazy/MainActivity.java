@@ -49,10 +49,12 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.gold_correct:
                 if (checked)
+                    findViewById(R.id.gold_correct).setClickable(false);
                     points = points + 2;
                 break;
             case R.id.gold_wrong:
                 if (checked)
+                    findViewById(R.id.gold_correct).setClickable(false);
                     break;
         }
 
@@ -70,9 +72,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.ocean_correct:
                 if (checked)
                     points = points + 2;
+                findViewById(R.id.ocean_correct).setClickable(false);
                 break;
             case R.id.ocean_wrong:
                 if (checked)
+                    findViewById(R.id.ocean_wrong).setClickable(false);
                     break;
         }
 
@@ -89,10 +93,12 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.hell_correct:
                 if (checked)
+                    findViewById(R.id.hell_correct).setClickable(false);
                     points = points + 2;
                 break;
             case R.id.hell_wrong:
                 if (checked)
+                    findViewById(R.id.hell_wrong).setClickable(false);
                     break;
         }
     }
@@ -109,9 +115,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.mountain_correct:
                 if (checked)
                     points = points + 2;
+                findViewById(R.id.mountain_correct).setClickable(false);
                 break;
             case R.id.mountain_wrong:
                 if (checked)
+                    findViewById(R.id.mountain_wrong).setClickable(false);
                     break;
         }
     }
@@ -131,6 +139,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.answerA_checkbox:
                 if (checked)
                     points = points + 2;
+                findViewById(R.id.answerA_checkbox).setClickable(false);
                 // Add two points
 
                 break;
@@ -138,6 +147,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.answerB_checkbox:
                 if (checked)
                     points = points + 2;
+                findViewById(R.id.answerB_checkbox).setClickable(false);
                 break;
         }
     }
@@ -154,9 +164,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.volcano_correct:
                 if (checked)
                     points = points + 2;
+                findViewById(R.id.volcano_correct).setClickable(false);
                 break;
             case R.id.volcano_wrong:
                 if (checked)
+                    findViewById(R.id.volcano_wrong).setClickable(false);
                     break;
         }
     }
@@ -173,9 +185,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.pacific_correct:
                 if (checked)
                     points = points + 2;
+                findViewById(R.id.pacific_correct).setClickable(false);
                 break;
             case R.id.pacific_wrong:
                 if (checked)
+                    findViewById(R.id.pacific_wrong).setClickable(false);
                     break;
         }
 
@@ -218,9 +232,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.reef_correct:
                 if (checked)
                     points = points + 2;
+                findViewById(R.id.reef_correct).setClickable(false);
                 break;
             case R.id.reef_wrong:
                 if (checked)
+                    findViewById(R.id.reef_wrong).setClickable(false);
                     break;
         }
     }
