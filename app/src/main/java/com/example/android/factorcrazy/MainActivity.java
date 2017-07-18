@@ -30,10 +30,7 @@ public class MainActivity extends AppCompatActivity {
         String earth = getString(R.string.answer1);
         if (yourAnswer.equals(getString(R.string.answer1)))
             points = points + 2;
-
-        else {
-            points = 0;
-        }
+        findViewById(R.id.enter_earth).setClickable(false);
     }
 
 
@@ -146,13 +143,24 @@ public class MainActivity extends AppCompatActivity {
                     findViewById(R.id.answerA_checkbox).setClickable(false);
                 // Add two points
                 points = points + 2;
-
                 break;
 
             case R.id.answerB_checkbox:
                 if (checked)
                     findViewById(R.id.answerB_checkbox).setClickable(false);
                 points = points + 2;
+                break;
+
+            case R.id.answerC_checkbox:
+                if (checked)
+                    findViewById(R.id.answerC_checkbox).setClickable(false);
+                points = 0;
+                break;
+
+            case R.id.answerD_checkbox:
+                if (checked)
+                    findViewById(R.id.answerD_checkbox).setClickable(false);
+                points = 0;
                 break;
         }
     }
@@ -223,6 +231,12 @@ public class MainActivity extends AppCompatActivity {
             case R.id.saharaB_checkbox:
                 if (checked)
                     points = points + 2;
+                break;
+
+            case R.id.saharaC_checkbox:
+                if (checked)
+                    findViewById(R.id.answerD_checkbox).setClickable(false);
+                points = 0;
                 break;
         }
     }

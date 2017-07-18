@@ -195,7 +195,9 @@
 
             <ImageView
                 style="@style/Image"
-                android:src="@drawable/hot" />
+                android:src="@drawable/hot"
+                android:contentDescription="@null"
+                />
 
             <TextView
                 android:id="@+id/temperature"

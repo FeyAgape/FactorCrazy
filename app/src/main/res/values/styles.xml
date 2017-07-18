@@ -27,7 +27,7 @@
         <item name="android:layout_height">@dimen/image_size</item>
         <item name="android:scaleType">centerCrop</item>
         <item name="android:layout_marginBottom">@dimen/mini</item>
-        <item name="android:contentDescription">different images of earth</item>
+        <item name="android:contentDescription">@null</item>
     </style>
 
     <style name="Button">
