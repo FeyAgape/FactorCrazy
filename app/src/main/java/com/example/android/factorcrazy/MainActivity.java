@@ -159,7 +159,6 @@ public class MainActivity extends AppCompatActivity {
                 if (checked)
                     break;
         }
-
     }
 
     /**
