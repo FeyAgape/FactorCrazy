@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.gold_correct:
                 if (checked)
+                    //allows the answers button to only be checked once
                     findViewById(R.id.gold_correct).setClickable(false);
                 points = points + 2;
                 break;
