@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
         String earth = getString(R.string.answer1);
         if (yourAnswer.equals(getString(R.string.answer1)))
             points = points + 2;
-        findViewById(R.id.enter_earth).setClickable(false);
     }
 
 
@@ -285,7 +284,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     /**
-     * This method is called when the button is clicked.
+     * This method is called when the reset button is clicked.
      */
     public void resetQuiz(View view) {
         points = 0;
