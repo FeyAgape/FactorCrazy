@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
             points = points + 2;
     }
 
-
     /**
      * This method is called when question 2 is answered.
      */
@@ -53,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
                 points = 0;
                 break;
         }
-
     }
 
     /**
@@ -76,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
                 points = 0;
                 break;
         }
-
     }
 
     /**
@@ -281,7 +278,6 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, submitMessageTwo, Toast.LENGTH_LONG).show();
         }
     }
-
 
     /**
      * This method is called when the reset button is clicked.
