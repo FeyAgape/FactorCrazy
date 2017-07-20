@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
     public void submitAnswer(View view) {
         EditText enterAnswer = (EditText) findViewById(R.id.enter_earth);
         String yourAnswer = enterAnswer.getText().toString();
-        String earth = getString(R.string.answer1);
         if (yourAnswer.equals(getString(R.string.answer1)))
             points = points + 2;
     }
