@@ -67,8 +67,7 @@
             <EditText
                 android:id="@+id/enter_earth"
                 style="@style/EditText"
-                android:hint="@string/answer_hint"
-                android:onClick="submitAnswer" />
+                android:hint="@string/answer_hint" />
 
         </LinearLayout>
 
@@ -90,13 +89,11 @@
                 <RadioButton
                     android:id="@+id/gold_correct"
                     style="@style/RadioButton"
-                    android:onClick="goldRadio"
                     android:text="@string/correct" />
 
                 <RadioButton
                     android:id="@+id/gold_wrong"
                     style="@style/RadioButton"
-                    android:onClick="goldRadio"
                     android:text="@string/wrong" />
             </RadioGroup>
 
@@ -120,13 +117,11 @@
                 <RadioButton
                     android:id="@+id/ocean_correct"
                     style="@style/RadioButton"
-                    android:onClick="oceanRadio"
                     android:text="@string/correct" />
 
                 <RadioButton
                     android:id="@+id/ocean_wrong"
                     style="@style/RadioButton"
-                    android:onClick="oceanRadio"
                     android:text="@string/wrong" />
             </RadioGroup>
 
@@ -150,13 +145,11 @@
                 <RadioButton
                     android:id="@+id/hell_correct"
                     style="@style/RadioButton"
-                    android:onClick="hellRadio"
                     android:text="@string/correct" />
 
                 <RadioButton
                     android:id="@+id/hell_wrong"
                     style="@style/RadioButton"
-                    android:onClick="hellRadio"
                     android:text="@string/wrong" />
             </RadioGroup>
         </LinearLayout>
@@ -179,13 +172,11 @@
                 <RadioButton
                     android:id="@+id/mountain_correct"
                     style="@style/RadioButton"
-                    android:onClick="mountainRadio"
                     android:text="@string/correct" />
 
                 <RadioButton
                     android:id="@+id/mountain_wrong"
                     style="@style/RadioButton"
-                    android:onClick="mountainRadio"
                     android:text="@string/wrong" />
             </RadioGroup>
 
@@ -207,25 +198,21 @@
             <CheckBox
                 android:id="@+id/answerA_checkbox"
                 style="@style/CheckBox"
-                android:onClick="onCheckboxClicked"
                 android:text="@string/question6a" />
 
             <CheckBox
                 android:id="@+id/answerB_checkbox"
                 style="@style/CheckBox"
-                android:onClick="onCheckboxClicked"
                 android:text="@string/question6b" />
 
             <CheckBox
                 android:id="@+id/answerC_checkbox"
                 style="@style/CheckBox"
-                android:onClick="onCheckboxClicked"
                 android:text="@string/question6c" />
 
             <CheckBox
                 android:id="@+id/answerD_checkbox"
                 style="@style/CheckBox"
-                android:onClick="onCheckboxClicked"
                 android:text="@string/question6d" />
         </LinearLayout>
 
@@ -247,13 +234,11 @@
                 <RadioButton
                     android:id="@+id/volcano_correct"
                     style="@style/RadioButton"
-                    android:onClick="volcanoRadio"
                     android:text="@string/correct" />
 
                 <RadioButton
                     android:id="@+id/volcano_wrong"
                     style="@style/RadioButton"
-                    android:onClick="volcanoRadio"
                     android:text="@string/wrong" />
             </RadioGroup>
 
@@ -277,13 +262,11 @@
                 <RadioButton
                     android:id="@+id/pacific_correct"
                     style="@style/RadioButton"
-                    android:onClick="pacificRadio"
                     android:text="@string/correct" />
 
                 <RadioButton
                     android:id="@+id/pacific_wrong"
                     style="@style/RadioButton"
-                    android:onClick="pacificRadio"
                     android:text="@string/wrong" />
             </RadioGroup>
         </LinearLayout>
@@ -302,19 +285,16 @@
             <CheckBox
                 android:id="@+id/saharaA_checkbox"
                 style="@style/CheckBox"
-                android:onClick="saharaCheckboxClicked"
                 android:text="@string/question9a" />
 
             <CheckBox
                 android:id="@+id/saharaB_checkbox"
                 style="@style/CheckBox"
-                android:onClick="saharaCheckboxClicked"
                 android:text="@string/question9b" />
 
             <CheckBox
                 android:id="@+id/saharaC_checkbox"
                 style="@style/CheckBox"
-                android:onClick="saharaCheckboxClicked"
                 android:text="@string/question9c" />
         </LinearLayout>
 
@@ -336,13 +316,11 @@
                 <RadioButton
                     android:id="@+id/reef_correct"
                     style="@style/RadioButton"
-                    android:onClick="reefRadio"
                     android:text="@string/correct" />
 
                 <RadioButton
                     android:id="@+id/reef_wrong"
                     style="@style/RadioButton"
-                    android:onClick="reefRadio"
                     android:text="@string/wrong" />
             </RadioGroup>
         </LinearLayout>
