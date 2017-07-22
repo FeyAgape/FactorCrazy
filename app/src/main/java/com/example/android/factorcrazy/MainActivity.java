@@ -9,6 +9,8 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import static android.R.attr.name;
+
 /**
  * This app displays points for a quiz app.
  */
@@ -107,8 +109,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Name field
-    EditText nameField = (EditText) findViewById(R.id.name_field);
-    String name = nameField.getText().toString();
+
+
+        name = nameEditText.getText().toString();
+
+        if (name.equals("")) {
+            nameEditText.setError(getString(R.string.error));
+            return;
 
 
     String submitMessage = name + getString(R.string.toast3a) + " " + points + " " + getString(R.string.toast3c);
