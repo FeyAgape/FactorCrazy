@@ -9,8 +9,6 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
-import static android.R.attr.name;
-
 /**
  * This app displays points for a quiz app.
  */
@@ -60,6 +58,11 @@ public class MainActivity extends AppCompatActivity {
         questionTenAnswerA = (RadioButton) findViewById(R.id.reef_correct);
     }
 
+    //Name field
+    EditText nameField = (EditText) findViewById(R.id.name_field);
+    String name = nameField.getText().toString();
+
+
     /**
      * This method is called when question 1 is answered.
      */
@@ -105,35 +108,25 @@ public class MainActivity extends AppCompatActivity {
 
         if (questionTenAnswerA.isChecked()) {
             points += 2;
-
-    }
-
-    //Name field
+        }
 
 
-        name = nameEditText.getText().toString();
+        String submitMessage = name + getString(R.string.toast3a) + " " + points + " " + getString(R.string.toast3c);
+        String submitMessageTwo = name + getString(R.string.toast3b) + " " + points + " " + getString(R.string.toast3c);
 
-        if (name.equals("")) {
-            nameEditText.setError(getString(R.string.error));
-            return;
-
-
-    String submitMessage = name + getString(R.string.toast3a) + " " + points + " " + getString(R.string.toast3c);
-    String submitMessageTwo = name + getString(R.string.toast3b) + " " + points + " " + getString(R.string.toast3c);
-
-        if(points >=18)
+        if (points >= 18)
             // makes Toast with the submitMessage which contains the  score
-            Toast.makeText(this,submitMessage,Toast.LENGTH_LONG).
+            Toast.makeText(this, submitMessage, Toast.LENGTH_LONG).
 
-    show();
+                    show();
 
-        else if(points< 18)
+        else if (points < 18)
 
-    {
-        Toast.makeText(this, submitMessageTwo, Toast.LENGTH_LONG).show();
+        {
+            Toast.makeText(this, submitMessageTwo, Toast.LENGTH_LONG).show();
+        }
+
     }
-
-}
 
     /**
      * This method is called when the reset button is clicked.
