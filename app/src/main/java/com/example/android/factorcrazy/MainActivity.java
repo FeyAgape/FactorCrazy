@@ -62,120 +62,71 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when question 1 is answered.
      */
 
-    public void questionOneSubmit(View view) {
+    public void submitPoints(View view) {
 
         if (questionOne.getText().toString().equals(getString(R.string.answer1))) {
             points += 2;
         }
-    }
 
-    /**
-     * This method is called when question 2 is answered.
-     */
-    public void questionTwoSubmit(View view) {
         if (questionTwoAnswerA.isChecked()) {
             points += 2;
         }
-    }
 
-    /**
-     * This method is called when question 3 is answered.
-     */
-    public void questionThreeSubmit(View view) {
         if (questionThreeAnswerA.isChecked()) {
             points += 2;
         }
-    }
 
-    /**
-     * This method is called when question 4 is answered.
-     */
-    public void questionFourSubmit(View view) {
         if (questionFourAnswerA.isChecked()) {
             points += 2;
         }
-    }
 
-
-    /**
-     * This method is called when question 5 is answered.
-     */
-    public void questionFiveSubmit(View view) {
         if (questionFiveAnswerA.isChecked()) {
             points += 2;
         }
-    }
-
-    /**
-     * This method is called when question 6 is answered.
-     */
-    public void questionSixSubmit(View view) {
 
         if ((questionSixAnswerA.isChecked()) && (questionSixAnswerB.isChecked()) && (!questionSixAnswerC.isChecked())
                 && (!questionSixAnswerD.isChecked())) {
             points += 4;
         }
-    }
 
-    /**
-     * This method is called when question 7 is answered.
-     */
-    public void questionSevenSubmit(View view) {
         if (questionSevenAnswerA.isChecked()) {
             points += 2;
         }
-    }
 
-    /**
-     * This method is called when question 8 is answered.
-     */
-    public void questionEightSubmit(View view) {
         if (questionEightAnswerA.isChecked()) {
             points += 2;
         }
-    }
-
-    /**
-     * This method is called when question 9 is answered.
-     */
-    public void questionNineSubmit(View view) {
-
         if ((questionNineAnswerA.isChecked()) && (questionNineAnswerB.isChecked())
                 && (!questionNineAnswerC.isChecked())) {
             points += 4;
         }
-    }
 
-    /**
-     * This method is called when question 10 is answered.
-     */
-    public void questionTenSubmit(View view) {
         if (questionTenAnswerA.isChecked()) {
             points += 2;
-        }
+
     }
 
-    /**
-     * This method is called when score button is clicked.
-     */
-    public void submitPoints(View view) {
-        //Name field
-        EditText nameField = (EditText) findViewById(R.id.name_field);
-        String name = nameField.getText().toString();
+    //Name field
+    EditText nameField = (EditText) findViewById(R.id.name_field);
+    String name = nameField.getText().toString();
 
 
-        String submitMessage = name + getString(R.string.toast3a) + " " + points + " " + getString(R.string.toast3c);
-        String submitMessageTwo = name + getString(R.string.toast3b) + " " + points + " " + getString(R.string.toast3c);
+    String submitMessage = name + getString(R.string.toast3a) + " " + points + " " + getString(R.string.toast3c);
+    String submitMessageTwo = name + getString(R.string.toast3b) + " " + points + " " + getString(R.string.toast3c);
 
-        if (points >= 18)
+        if(points >=18)
             // makes Toast with the submitMessage which contains the  score
-            Toast.makeText(this, submitMessage, Toast.LENGTH_LONG).show();
+            Toast.makeText(this,submitMessage,Toast.LENGTH_LONG).
 
-        else if (points < 18) {
-            Toast.makeText(this, submitMessageTwo, Toast.LENGTH_LONG).show();
-        }
+    show();
+
+        else if(points< 18)
+
+    {
+        Toast.makeText(this, submitMessageTwo, Toast.LENGTH_LONG).show();
     }
 
+}
 
     /**
      * This method is called when the reset button is clicked.
